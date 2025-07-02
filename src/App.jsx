@@ -295,11 +295,11 @@ const [modalContent, setModalContent] = useState(null);
 {modalContent && (
   <div
     className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center p-4"
-    onClick={() => setModalContent(null)} // Close when clicking background
+    onClick={() => setModalContent(null)} 
   >
     <div
       className="relative max-w-3xl w-full"
-      onClick={(e) => e.stopPropagation()} // Prevent closing when clicking content
+      onClick={(e) => e.stopPropagation()} 
     >
       {/* Close Button */}
       <button
